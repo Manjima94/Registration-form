@@ -26,8 +26,13 @@ class _RegState extends State<Reg> {
           style: TextStyle(fontWeight: FontWeight.bold),
         )),
       ),
+      
       body: Column(
         children: [
+
+         // name field //
+
+          
           Row(
             children: [
               Text(
@@ -44,6 +49,9 @@ class _RegState extends State<Reg> {
                   ))
             ],
           ),
+
+          // email filed //
+          
           Row(
             children: [
               Padding(
@@ -66,6 +74,11 @@ class _RegState extends State<Reg> {
               )
             ],
           ),
+
+          
+          // mobile field //
+
+          
           Row(
             children: [
               Padding(
@@ -88,6 +101,10 @@ class _RegState extends State<Reg> {
               )
             ],
           ),
+
+          
+          // gender field //
+
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Padding(
@@ -138,6 +155,10 @@ class _RegState extends State<Reg> {
               ),
             ),
           ),
+
+      
+        // Button to submit datas //
+          
           Padding(
             padding: const EdgeInsets.only(top: 20),
             child: Row(
@@ -155,6 +176,10 @@ class _RegState extends State<Reg> {
                       style: TextStyle(
                           color: Colors.black, fontWeight: FontWeight.bold),
                     )),
+
+                // button to cancel all datas //
+
+                
                 ElevatedButton(
                     onPressed: () {
                       name.clear();
