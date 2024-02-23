@@ -3,9 +3,9 @@
 import 'package:flutter/material.dart';
 
 class Details extends StatefulWidget {
-  var data;
+  
   List users;
-  Details({super.key, this.data, required this.users});
+  Details({super.key,  required this.users});
 
   @override
   State<Details> createState() => _DetailsState();
